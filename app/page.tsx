@@ -141,6 +141,71 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Trust Bar */}
+          <div className="mt-20 border-t border-border pt-12">
+            <p className="text-center text-sm font-bold text-muted-foreground uppercase tracking-widest mb-10">Our alumni work at world-class companies</p>
+            <div className="flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale transition-all hover:grayscale-0">
+               <span className="text-3xl font-black tracking-tighter">GOOGLE</span>
+               <span className="text-3xl font-black tracking-tighter">META</span>
+               <span className="text-3xl font-black tracking-tighter">NETFLIX</span>
+               <span className="text-3xl font-black tracking-tighter">STRIPE</span>
+               <span className="text-3xl font-black tracking-tighter">OPENAI</span>
+               <span className="text-3xl font-black tracking-tighter">AIRBNB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Bento */}
+      <section className="px-4 py-24 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl font-black tracking-tight sm:text-5xl">Your Path to <span className="text-primary italic">Mastery.</span></h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">A seamless learning experience designed to maximize your growth and minimize the fluff.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+             <div className="bg-card rounded-[2.5rem] p-10 border border-border flex flex-col justify-between group overflow-hidden">
+                <div className="space-y-4 relative z-10">
+                   <div className="h-12 w-12 rounded-2xl bg-primary text-white flex items-center justify-center font-black text-xl">1</div>
+                   <h3 className="text-2xl font-black">Choose Your Path</h3>
+                   <p className="text-muted-foreground">Select from our specialized learning paths or individual courses tailored to your goals.</p>
+                </div>
+                <div className="flex -space-x-2 relative z-10">
+                   <div className="h-8 w-24 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-[10px] font-black text-primary">REACT</div>
+                   <div className="h-8 w-24 rounded-full bg-secondary/10 border border-secondary/20 flex items-center justify-center text-[10px] font-black text-secondary">DESIGN</div>
+                </div>
+                <div className="absolute -bottom-10 -right-10 h-40 w-40 bg-primary/5 rounded-full transition-transform group-hover:scale-150" />
+             </div>
+
+             <div className="bg-card rounded-[2.5rem] p-10 border border-border flex flex-col justify-between group overflow-hidden md:translate-y-6">
+                <div className="space-y-4 relative z-10">
+                   <div className="h-12 w-12 rounded-2xl bg-secondary text-white flex items-center justify-center font-black text-xl">2</div>
+                   <h3 className="text-2xl font-black">Learn by Doing</h3>
+                   <p className="text-muted-foreground">Watch high-quality lessons and immediately apply what you've learned through hands-on projects.</p>
+                </div>
+                <div className="h-20 w-full bg-muted/50 rounded-2xl border border-border/50 p-4 flex items-center gap-4 relative z-10">
+                   <div className="h-3 w-3 rounded-full bg-red-500" />
+                   <div className="h-3 w-3 rounded-full bg-yellow-500" />
+                   <div className="h-3 w-3 rounded-full bg-green-500" />
+                   <div className="h-1.5 w-full bg-border rounded-full" />
+                </div>
+                <div className="absolute -bottom-10 -right-10 h-40 w-40 bg-secondary/5 rounded-full transition-transform group-hover:scale-150" />
+             </div>
+
+             <div className="bg-card rounded-[2.5rem] p-10 border border-border flex flex-col justify-between group overflow-hidden">
+                <div className="space-y-4 relative z-10">
+                   <div className="h-12 w-12 rounded-2xl bg-accent text-white flex items-center justify-center font-black text-xl">3</div>
+                   <h3 className="text-2xl font-black">Get Certified</h3>
+                   <p className="text-muted-foreground">Earn industry-recognized certificates and showcase your portfolio to top employers.</p>
+                </div>
+                <div className="flex justify-end relative z-10">
+                   <Award className="h-12 w-12 text-accent animate-bounce" />
+                </div>
+                <div className="absolute -bottom-10 -right-10 h-40 w-40 bg-accent/5 rounded-full transition-transform group-hover:scale-150" />
+             </div>
+          </div>
         </div>
       </section>
 
